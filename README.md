@@ -52,8 +52,8 @@ should print somehting like:
 The LoggingAgent.jar implements a javaagent and adds logging to specific compiled code without actually having to
 recompile that code.
 
-The logging-agent module is the actual javaagent
-The Logging-agent-test-project is just a project for testing this agent as described above.
+* The logging-agent module is the actual javaagent
+* The Logging-agent-test-project is just a project for testing this agent as described above.
 
 # Todo #
 
