@@ -6,10 +6,11 @@ This project demonstrates the usage of a javaagent as a LoggingAgent
 
 * open command prompt / terminal in this folder
 * mvn package
-* this will create an artifact folder
+this will create an artifact folder
 
 
     java -javaagent:artifact/LoggingAgent-jar-with-dependencies.jar=nl.ivonet.coce.MyMain,nl.ivonet.code.One -jar AgentTest.jar these are all arguments
+
 
 
 should print somehting like:
