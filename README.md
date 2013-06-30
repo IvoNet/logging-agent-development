@@ -8,7 +8,8 @@ This project demonstrates the usage of a javaagent as a LoggingAgent
 * mvn package
 * this will create an artifact folder
 * java -javaagent:artifact/LoggingAgent-jar-with-dependencies.jar=nl.ivonet.coce.MyMain,nl.ivonet.code.One -jar AgentTest.jar these are all arguments
-* should print somehting like:
+
+should print somehting like:
 
 
     12:35:59.125 [main] INFO  nl.ivonet.agent.LoggingAgent - LoggingAgent invoked with args: nl.ivonet.code.MyMain,nl.ivonet.code.One
@@ -35,6 +36,7 @@ This project demonstrates the usage of a javaagent as a LoggingAgent
     I'm One
     jun 30, 2013 12:35:59 PM nl.ivonet.code.MyMain main
     INFO: <<< main(args=[these, are, all, arguments])
+
 
 * The AgentTest.jar is a test jar of course. you should be able to do this by adding the agent to your own code
 
