@@ -64,6 +64,9 @@ public final class LoggingAgent {
             final String[] argumentsList = COMPILED_DELIMITER.split(args);
             final Set<String> arguments = new HashSet<String>(Arrays.asList(argumentsList));
             inst.addTransformer(new LoggingTransformer(arguments));
+//            String classpath = System.getProperty("java.class.path");
+//            System.out.println("classpath = " + classpath);
+
         } else {
             LOG.warn("This LoggingAgent will not do anything!");
             LOG.warn("No parameters provided for classes to enhance with logging");
